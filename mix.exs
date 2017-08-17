@@ -8,8 +8,8 @@ defmodule EctoArc.Mixfile do
      version: @version,
      elixir: "~> 1.0",
      description: "Ecto extension to support arc uploaders",
-     package: package,
-     deps: deps]
+     package: package(),
+     deps: deps()]
   end
 
   # Configuration for the OTP application
@@ -31,7 +31,7 @@ defmodule EctoArc.Mixfile do
   defp deps do
     [
      {:ecto, "~> 2.0"},
-     {:arc, "~> 0.5.0"}
+     {:arc, "~> 0.8.0"}
     ]
   end
 
